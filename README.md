@@ -45,7 +45,7 @@ Define an interface for creating objects, but let subclasses decide which class 
 - Factory: `ShapeFactory` determines which shape to create.
 
 **Output:**
-![Factory Method Output](<img width="1364" height="720" alt="3" src="https://github.com/user-attachments/assets/6a2cf998-31cc-4b59-b666-078b41a2c6ca" />)
+![Factory Method Output]<img width="1364" height="720" alt="3" src="https://github.com/user-attachments/assets/6a2cf998-31cc-4b59-b666-078b41a2c6ca" />)
 
 ---
 
@@ -59,7 +59,7 @@ Construct complex objects step-by-step using a builder class.
 - Nested static `Builder` class with **method chaining** for clarity and flexibility.
 
 **Output:**
-![Builder Pattern Output](<img width="1365" height="724" alt="4" src="https://github.com/user-attachments/assets/fa9ee44c-88b8-4dfc-89cd-ee1920e063fd" />)
+![Builder Pattern Output]<img width="1365" height="724" alt="4" src="https://github.com/user-attachments/assets/fa9ee44c-88b8-4dfc-89cd-ee1920e063fd" />)
 
 ---
 
@@ -73,7 +73,7 @@ Clone objects instead of creating them from scratch.
 - Demonstrates **deep copying** — changes in the clone don’t affect the original object.
 
 **Output:**
-![Prototype Pattern Output](<img width="1365" height="718" alt="5" src="https://github.com/user-attachments/assets/f8f19c0a-a02c-4769-81f5-46c33083ca1b" />)
+![Prototype Pattern Output]<img width="1365" height="718" alt="5" src="https://github.com/user-attachments/assets/f8f19c0a-a02c-4769-81f5-46c33083ca1b" />)
 
 ---
 
@@ -88,7 +88,7 @@ Provide an interface for creating **families of related or dependent objects** w
 - Ensures consistent **UI themes** (Light/Dark) across components.
 
 **Output:**
-![Abstract Factory Output](<img width="1365" height="719" alt="6" src="https://github.com/user-attachments/assets/80d08152-4250-4a13-8d70-adb3388b0fe4" />)
+![Abstract Factory Output]<img width="1365" height="719" alt="6" src="https://github.com/user-attachments/assets/80d08152-4250-4a13-8d70-adb3388b0fe4" />)
 
 ---
 
