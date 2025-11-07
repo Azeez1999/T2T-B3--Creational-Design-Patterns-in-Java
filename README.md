@@ -1,50 +1,102 @@
-# T2T-B3--Creational-Design-Patterns-in-Java
+# Creational Design Patterns in Java
 
-This repository demonstrates five creational design patterns implemented in Java.  
-Each pattern is in its own `.java` file.
-
----
-
-## 1️⃣ Singleton Pattern
-**Intent:** Ensure a class has only one instance and provide a global access point.  
-**When to use:** For shared resources such as loggers, caches, or configuration managers.  
-**Implementation:** Uses **lazy initialization with double-checked locking** for thread safety.  
-An **enum-based singleton** is also provided (thread-safe and serialization-safe).
+This repository demonstrates **six key Creational Design Patterns** in Java, implemented with clear and simple examples.  
+Each pattern is illustrated through a mini-program that highlights its **purpose, structure, and behavior**.
 
 ---
 
-## 2️⃣ Factory Method Pattern
-**Intent:** Define an interface for creating objects but let subclasses or factories decide which class to instantiate.  
-**When to use:** When client code shouldn’t depend on concrete class names or object creation details.
+## 1. Singleton Pattern
+
+**Goal:**  
+Allow only one instance of a class (e.g., `Logger`) throughout the application.
+
+**Implementation Highlights:**
+- Uses a **private static instance variable**.
+- Provides a **getInstance()** method for global access.
+- Demonstrates that multiple variables refer to the **same instance**.
 
 ---
 
-## 3️⃣ Builder Pattern
-**Intent:** Construct complex objects step-by-step using a fluent API.  
-**When to use:** When there are many optional parameters or combinations that would make constructors cumbersome.
+## 2. Lazy Singleton Pattern
+
+**Goal:**  
+Create the Singleton instance **only when needed**, improving startup performance.
+
+**Implementation Highlights:**
+- Checks if the instance is `null` before creating it.
+- Supports **thread-safe initialization** (can be enhanced using synchronized blocks).
 
 ---
 
-## 4️⃣ Prototype Pattern
-**Intent:** Create new objects by cloning existing ones instead of instantiating from scratch.  
-**When to use:** When object creation is expensive or when you need snapshot copies.  
-**Implementation:** Performs a **deep copy** of mutable fields to avoid shared references.
+## 3. Factory Method Pattern
+
+**Goal:**  
+Define an interface for creating objects, but let subclasses decide which class to instantiate.
+
+**Implementation Highlights:**
+- Interface: `Shape` with a `draw()` method.  
+- Concrete classes: `Circle`, `Rectangle`, `Square`.  
+- Factory: `ShapeFactory` determines which shape to create.
 
 ---
 
-## 5️⃣ Abstract Factory Pattern
-**Intent:** Provide an interface to create families of related or dependent objects without specifying their concrete classes.  
-**When to use:** When you want to switch entire “families” of products — for example, light/dark UI themes.
+## 4. Builder Pattern
+
+**Goal:**  
+Construct complex objects step-by-step using a builder class.
+
+**Implementation Highlights:**
+- `Computer` class with fields: `CPU`, `RAM`, `storage`, `graphicsCard`.  
+- Nested static `Builder` class with **method chaining** for clarity and flexibility.
 
 ---
 
-## ⚙️ How to Compile and Run
+## 5. Prototype Pattern
 
-```bash
-# run a single demo
-java SingletonDemo
-java FactoryMethodDemo
-java BuilderDemo
-java PrototypeDemo
-java AbstractFactoryDemo light
-java AbstractFactoryDemo dark
+**Goal:**  
+Clone objects instead of creating them from scratch.
+
+**Implementation Highlights:**
+- Implements `Cloneable` and overrides `clone()`.  
+- Demonstrates **deep copying** — changes in the clone don’t affect the original object.
+
+---
+
+## 6. Abstract Factory Pattern
+
+**Goal:**  
+Provide an interface for creating **families of related or dependent objects** without specifying their concrete classes.
+
+**Implementation Highlights:**
+- Interfaces: `Button`, `Checkbox`.  
+- Factories: `LightThemeFactory`, `DarkThemeFactory`.  
+- Ensures consistent **UI themes** (Light/Dark) across components.
+
+---
+
+## 🧰 Technologies Used
+
+- **Java Version:** 24 (OpenJDK)  
+- **IDE:** IntelliJ IDEA 2025.2.4  
+- **Concepts Covered:** Creational Design Patterns  
+- **Language Level:** Java 17+
+
+---
+
+## 💡 Bonus: Thread-Safe Singleton Options
+
+For a **thread-safe Singleton**, you can:
+- Use **lazy initialization** with a `synchronized` block, or  
+- Implement an **enum-based Singleton** (simpler and inherently thread-safe).
+
+---
+
+## 👤 Author
+
+**Azeez Ahamed**
+
+---
+
+
+
+> “Design patterns simplify code creation and maintenance by providing proven solutions for common problems.”
