@@ -16,7 +16,7 @@ Allow only one instance of a class (e.g., `Logger`) throughout the application.
 - Demonstrates that multiple variables refer to the **same instance**.
 
 **Output:**
-![Singleton Output](<img width="1365" height="723" alt="1" src="https://github.com/user-attachments/assets/536ac006-e484-4a99-932c-68c22156e781" />)
+![Singleton Output]<img width="1365" height="723" alt="1" src="https://github.com/user-attachments/assets/536ac006-e484-4a99-932c-68c22156e781" />)
 
 ---
 
