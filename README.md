@@ -1,7 +1,7 @@
 # T2T-B3--Creational-Design-Patterns-in-Java
 
 This repository demonstrates five creational design patterns implemented in Java.  
-Each pattern is in its own `.java` file, with an optional `Main.java` to run them all together.
+Each pattern is in its own `.java` file.
 
 ---
 
@@ -41,9 +41,6 @@ An **enum-based singleton** is also provided (thread-safe and serialization-safe
 ## ⚙️ How to Compile and Run
 
 ```bash
-# Compile everything
-javac *.java
-
 # run a single demo
 java SingletonDemo
 java FactoryMethodDemo
